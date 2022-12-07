@@ -32,8 +32,7 @@ function getResult(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
     score = 0
 
-  // All situations where human wins, set `score` to 1
-  // make sure to use else ifs here
+  
   } else if (playerChoice === 'Rock' && computerChoice === 'Scissors') {
     score = 1
 
