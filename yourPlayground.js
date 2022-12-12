@@ -132,10 +132,10 @@ function sum(a, b) {
 // num1 = sum(1, 2)
 //console.log(num1)
 
-function sum1(b, d) {
-  console.log(b + d)
-}
-sum1(3, 4)
+// function sum1(b, d) {
+//   console.log(b + d)
+// }
+// sum1(3, 4)
 
 //.........tip Calculator..................
 // function calculateFoodTotal(food, tip) {
@@ -166,7 +166,7 @@ const sumArrow = (a, b) => {
 //ARRAYS
 
 const month = ['june', 'july', 'september', 'august']
-console.log(month[0])
+//console.log(month[0])
 const groceries = ['🍏', '🍓', '🍆', '🥕']
 //console.log(groceries)
 //console.log(groceries[0])
@@ -232,307 +232,389 @@ groceries.push('🍜')
 //methods Math.floor
 
 
-// const introducer = (name, shirt) => {
-//   const person = {
-//     name: name,
-//     shirt: shirt,
-//     assets: 100000,
-//     liabilities: 50000,
-//     networth: function() {
-//       return this.assets - this.liabilities
-//     }
-//   }
-//   const intro = 'Hi my name is ${person.name} and the color of my shirt is ${shirt.name} and my net worth is $${person.networth} USD'
-
-//   return intro
-// }
-// console.log(introducer('shiny', 'purple'))
-
-
-
-//alert _ again need verification
-
-//method creation inside an object.
-
-//A method is a property containing a function definition.
-
-//for LOOPS
-const fruits = ['🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐']
-//console.log(fruits[0])
-//console.log(fruits[1])
-//console.log(fruits[2])
-//console.log(fruits[3])
-
-// for (let i=0; i < fruits.length; i++){
-//   console.log(i, fruits[i])
-// }
-
-//Don't use this type of loop.Only reason we teach it, because this is the basic of all the other loops
-
-for (const fruit of fruits) {
-  //console.log(fruit)
-}
-
-const numbers = [1, 2, 3, 4, 5, 6]
-
-// for(let i=0; i<numbers.length; i++){
-//   console.log(numbers[i])
-// }
-
-// const double = (numbers) => {
-//   let result = []
-//   for(const num of numbers){
-//   result.push(num**2)
-// }
-//   return result
-// }
-// console.log(double([1,2,3,4,5,6,7,8,9,20,20,5,6,3,4,5,6,7,8,9,20,20,5,6,3,4,5,6,7,8,9,20,20,5,6,3,4,5,6,7,8,9,20,20,5,6,]))
-
-
-
-// let result = []
-
-// for(const num of numbers){
-//   //console.log(num*2)
-//   result.push(num*2)
-// }
-// console.log(result)
-
-//[2,4,6,8,12]
-
-
-//Advanced ARRAY'S
-//ARRAY AND OBJECT EXERCISES
-
-// const howManyLetters = () => {
-//   const phrase = 'hey, can you go to grocery store with me?'
-// //for of 
-//   for (letter in phrase){
-//     console.log(letter)
-//   }  
-// }
-// (howManyLetters())
-
-// const howManyLetters = () => {
-//   const phrase = 'hey, can you go to grocery store with me?'
-// //for of 
-//   for (const letter of phrase){
-//     console.log(letter)
-//   }  
-// }
-// (howManyLetters())
-
-// const howManyLetters = () => {
-//   const phrase = 'hey, can you go to grocery store with me?'
-// //for of 
-//   for (letter in phrase){
-//     console.log(letter)
-//   }  
-// }
-// (howManyLetters())
-
-
-// const howManyLetters = () => {
-//   const phrase = 'hey, can you go to grocery store with me?'
-// //for of 
-//   for (letter in phrase){
-//     console.log(letter+1)
-//   }  
-// }
-// (howManyLetters())
-
-// const howManyLetters = () => {
-//   const phrase = 'hey, can you go to grocery store with me?'
-// //for of 
-//   for (letter in phrase){
-//     console.log(Number(letter)+1)
-//   }  
-// }
-// (howManyLetters())
-
-
-
-
-//const howManyLetters = () => {
-//const phrase = 'hey, can you go to grocery store with me?'
-//for of 
-
-//   let result = 0;
-
-//   for (const index in phrase){
-//   console.log(Number(index)+1)
-//     result = index
-//   }  
-//   return { result : index }
-// }
-// console.log(howManyLetters())
-//Hint - You can return results as an object.
-// {result: index}
-
-// const howManyLetters = (phrase) => {
-
-//   phrase.length
-//   //any string can have length...
-//   //banana =>6
-
-//   let result = 0;
-//   for (const index in phrase)
-//   {
-//   console.log(Number(index) + 1)
-//     result = Number(index) + 1
-//   }  
-//   return {result}
-// }
-//   const phrase = prompt('write your phrase')
-
-// console.log(howManyLetters(phrase))
-
-// const howManyletters = (phrase) => {
-//   return{ result : phrase.length}
-// }
-// const phrase = prompt('write your phrase')
-// console.log(howManyletters(phrase))
-//javascript string length
-
-//[1,2,3,4] //10
-// result = 0
-// result = 1
-// result = 3
-// result = 6
-// result = 10
-// const sumArray = (numbers) => {
-//    let result = 0;
-//   //for loop
-//   for (const number of numbers) {
-//     console.log(number)
-//     result = result + number
-//   }
-//   return {result}
-// }
-// const nums = [1, 2, 3, 4, 5]
-// console.log(sumArray(nums))
-
-// const sumArray = (numbers) =>{
-//     let result = 0;
-//     //for loop
-//   for(const number of numbers){
-//     console.log(number)
-//     result = result + number
-//   }
-//   return { result }
-// }
-// const nums = [1, 2, 3, 4, 5]
-// console.log(sumArray(nums))
-// //sum up all numbers in an array
+const introducer = (name, shirt) => {
+  const person = {
+    name: name,
+    shirt: shirt,
+    assets: 100000,
+    liabilities: 50000,
+    networth: function() {
+      return this.assets - this.liabilities
+      //     }
+      //   }
+      //   const intro = 'Hi my name is ${person.name} and the color of my shirt is ${shirt.name} and my net worth is $${person.networth} USD'
+
+      //   return intro
+      // }
+      // console.log(introducer('shiny', 'purple'))
+
+
+
+      //alert _ again need verification
+
+      //method creation inside an object.
+
+      //A method is a property containing a function definition.
+
+      //for LOOPS
+      const fruits = ['🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐', '🍏', '🍓', '🍑', '🍐']
+      //console.log(fruits[0])
+      //console.log(fruits[1])
+      //console.log(fruits[2])
+      //console.log(fruits[3])
+
+      // for (let i=0; i < fruits.length; i++){
+      //   console.log(i, fruits[i])
+      // }
+
+      //Don't use this type of loop.Only reason we teach it, because this is the basic of all the other loops
+
+      for (const fruit of fruits) {
+        //console.log(fruit)
+      }
+
+      const numbers = [1, 2, 3, 4, 5, 6]
+
+      for (let i = 0; i < numbers.length; i++) {
+        console.log(numbers[i])
+      }
+
+      const double = (numbers) => {
+        let result = []
+        for (const num of numbers) {
+          result.push(num ** 2)
+        }
+        return result
+      }
+      // console.log(double([1,2,3,4,5,6,7,8,9,20,20,5,6,3,4,5,6,7,8,9,20,20,5,6,3,4,5,6,7,8,9,20,20,5,6,3,4,5,6,7,8,9,20,20,5,6,]))
+
+
+
+      // let result = []
+
+      // for(const num of numbers){
+      //   //console.log(num*2)
+      //   result.push(num*2)
+      // }
+      // console.log(result)
+
+      //[2,4,6,8,12]
+
+
+      //Advanced ARRAY'S
+      //ARRAY AND OBJECT EXERCISES
+
+      // const howManyLetters = () => {
+      //   const phrase = 'hey, can you go to grocery store with me?'
+      // //for of 
+      //   for (letter in phrase){
+      //     console.log(letter)
+      //   }  
+      // }
+      // (howManyLetters())
+
+      // const howManyLetters = () => {
+      //   const phrase = 'hey, can you go to grocery store with me?'
+      // //for of 
+      //   for (const letter of phrase){
+      //     console.log(letter)
+      //   }  
+      // }
+      // (howManyLetters())
+
+      // const howManyLetters = () => {
+      //   const phrase = 'hey, can you go to grocery store with me?'
+      // //for of 
+      //   for (letter in phrase){
+      //     console.log(letter)
+      //   }  
+      // }
+      // (howManyLetters())
+
+
+      // const howManyLetters = () => {
+      //   const phrase = 'hey, can you go to grocery store with me?'
+      // //for of 
+      //   for (letter in phrase){
+      //     console.log(letter+1)
+      //   }  
+      // }
+      // (howManyLetters())
+
+      // const howManyLetters = () => {
+      //   const phrase = 'hey, can you go to grocery store with me?'
+      // //for of 
+      //   for (letter in phrase){
+      //     console.log(Number(letter)+1)
+      //   }  
+      // }
+      // (howManyLetters())
+
+
+
+
+      //const howManyLetters = () => {
+      //const phrase = 'hey, can you go to grocery store with me?'
+      //for of 
+
+      //   let result = 0;
+
+      //   for (const index in phrase){
+      //   console.log(Number(index)+1)
+      //     result = index
+      //   }  
+      //   return { result : index }
+      // }
+      // console.log(howManyLetters())
+      //Hint - You can return results as an object.
+      // {result: index}
+
+      // const howManyLetters = (phrase) => {
+
+      //   phrase.length
+      //   //any string can have length...
+      //   //banana =>6
+
+      //   let result = 0;
+      //   for (const index in phrase)
+      //   {
+      //   console.log(Number(index) + 1)
+      //     result = Number(index) + 1
+      //   }  
+      //   return {result}
+      // }
+      //   const phrase = prompt('write your phrase')
+
+      // console.log(howManyLetters(phrase))
+
+      // const howManyletters = (phrase) => {
+      //   return{ result : phrase.length}
+      // }
+      // const phrase = prompt('write your phrase')
+      // console.log(howManyletters(phrase))
+      //javascript string length
+
+      //[1,2,3,4] //10
+      // result = 0
+      // result = 1
+      // result = 3
+      // result = 6
+      // result = 10
+      // const sumArray = (numbers) => {
+      //    let result = 0;
+      //   //for loop
+      //   for (const number of numbers) {
+      //     console.log(number)
+      //     result = result + number
+      //   }
+      //   return {result}
+      // }
+      // const nums = [1, 2, 3, 4, 5]
+      // console.log(sumArray(nums))
+
+      // const sumArray = (numbers) =>{
+      //     let result = 0;
+      //     //for loop
+      //   for(const number of numbers){
+      //     console.log(number)
+      //     result = result + number
+      //   }
+      //   return { result }
+      // }
+      // const nums = [1, 2, 3, 4, 5]
+      // console.log(sumArray(nums))
+      // //sum up all numbers in an array
 
 
-// const max = (numbers) => {
-//   let result = numbers[0]
-//   //loop
+      // const max = (numbers) => {
+      //   let result = numbers[0]
+      //   //loop
 
-//   for (const number of numbers) {
-//     if (number > result) {
-//       result = number
-//     }
-//   }
-//   return { result }
-// }
+      //   for (const number of numbers) {
+      //     if (number > result) {
+      //       result = number
+      //     }
+      //   }
+      //   return { result }
+      // }
 
-// console.log(max([1, 2, 3, 4, 5, 1, 2]))
+      // console.log(max([1, 2, 3, 4, 5, 1, 2]))
 
 
 
 
-const letterfrequency = (phrase) => {
-  //'haha'
-  //letterfrequency('haha') 👉 {'h': 2, 'a' :2}
-  console.log(phrase)
+      const letterfrequency = (phrase) => {
+        //'haha'
+        //letterfrequency('haha') 👉 {'h': 2, 'a' :2}
+        console.log(phrase)
 
-  let frequency = {}
-  for (const letter of phrase) {
-    //check if letter exists in frequency
-    if (letter in frequency) {
-      //increment the value by +1
-      frequency[letter] = frequency[letter] + 1  //frequency[letter]+=1
-      //otherwise, set the value to 1
-    } else {
-      frequency[letter] = 1
-    }
-  }
-  return frequency
-}
-//console.log(letterfrequency('Oh god it took me so long to write this actually, please help me complete this in this week itself, please'))
+        let frequency = {}
+        for (const letter of phrase) {
+          //check if letter exists in frequency
+          if (letter in frequency) {
+            //increment the value by +1
+            frequency[letter] = frequency[letter] + 1  //frequency[letter]+=1
+            //otherwise, set the value to 1
+          } else {
+            frequency[letter] = 1
+          }
+        }
+        return frequency
+      }
+      //console.log(letterfrequency('Oh god it took me so long to write this actually, please help me complete this in this week itself, please'))
 
 
-//incremental operators
-// ++, --, +=
+      //incremental operators
+      // ++, --, +=
 
-//wordFrequency('lol what lol') --('lol' :2, 'what' : 1")
+      //wordFrequency('lol what lol') --('lol' :2, 'what' : 1")
 
 
 
 
-// const wordFrequency = (phrase) => {
-//   let frequency = {}
-//   words = phrase.split(' ')
+      // const wordFrequency = (phrase) => {
+      //   let frequency = {}
+      //   words = phrase.split(' ')
 
-//   for (const word of words) {
-//     console.log(word)
-//     if (word in frequency) {
-//       frequency[word] += 1
-//     } else {
-//       frequency[word] = 1
-//     }
-//   }
-//   console.log(words)
+      //   for (const word of words) {
+      //     console.log(word)
+      //     if (word in frequency) {
+      //       frequency[word] += 1
+      //     } else {
+      //       frequency[word] = 1
+      //     }
+      //   }
+      //   console.log(words)
 
-//   return frequency
-// }
-// console.log(wordFrequency('lol what lol yo yo yo'))
+      //   return frequency
+      // }
+      // console.log(wordFrequency('lol what lol yo yo yo'))
 
 
 
 
 
-// for (letter of  phrase){
-//   console.log(letter)
-// }
+      // for (letter of  phrase){
+      //   console.log(letter)
+      // }
 
-// phrase.split('')
-// => ['lol','what','lol']
+      // phrase.split('')
+      // => ['lol','what','lol']
 
 
 
 
 
-// const wordFrequency = (phrase) => {
+      // const wordFrequency = (phrase) => {
 
-//   words = phrase.split(' ')
-//   return letterfrequency(words)
-// }
-// const userInput = prompt('Write your sentence')
-// console.log(wordFrequency(userInput))
+      //   words = phrase.split(' ')
+      //   return letterfrequency(words)
+      // }
+      // const userInput = prompt('Write your sentence')
+      // console.log(wordFrequency(userInput))
 
 
 
 
 
-//HIGHER ORDER FUNCTIONS IN ARRAYS 
-//ARRAY METHODS
-//LESSON 1- MAP()   ---loops and returns an array
-//lESSION 2- FILTER()
-//LESSION 3 - REDUCE()
+      //HIGHER ORDER FUNCTIONS IN ARRAYS 
+      //ARRAY METHODS
+      //LESSON 1- MAP()   ---loops and returns an array
+      //lesson 2- FILTER()----loops and returns an array with matching conditions
+      //LESSON 3 - REDUCE()
 
-//[1, 2, 3, 4].map(number => console.log(number))
-//implicit return i.e automatic return
+      //[1, 2, 3, 4].map(number => console.log(number))
+      //implicit return i.e automatic return
 
-// [1, 2, 3, 4].map(number => {
-//   console.log(number)
-//   console.log('haha')
-// })
+      // [1, 2, 3, 4].map(number => {
+      //   console.log(number)
+      //   console.log('haha')
+      // })
 
-// let result = [1, 2, 3, 4].map(number => number * 2)
-// console.log(result)
+      // const double = (numbers) => {
+      //   let result = []
+      //   for (const number of numbers) {
+      //     result.push(number * 2)
+      //   }
+      //   return result
+      // }
+      // console.log(result)
+      //something wrong
+
+      const doubleMap = (numbers) => {
+        return numbers.map(number => number * 2)
+      }
+      //console.log(doubleMap([1, 2, 3]))
+
+      // let result = [1, 2, 3, 4].map(number => number * 2)
+      // console.log(result)
+
+
+
+      //Filter**********
+
+      //filter([1,2,3,4,5,6],3) it should return [4,5,6]
+      const filter = (numbers, greaterThan) => {
+        let result = []
+        for (const number of numbers) {
+          if (number > greaterThan) {
+            result.push(number)
+          }
+        }
+        return result
+      }
+      //console.log(filter([1, 2, 3, 4, 5, 6], 3))
+
+      const nums = [1, 2, 3, 4, 5, 6]
+      //console.log(nums.filter(num => num > 4 || num < 2))
+
+      //if (userIsAuthenticated && userIsPayingMember){
+      // code goes here
+      //}
+
+      const actors = [
+        { name: 'johnny', netWorth: 20000000 },
+        { name: 'amber', netWorth: 10 },
+        { name: 'leonardo', netWorth: 10000000 },
+      ]
+      let result = actors.filter(actor => actor.netWorth > 10)
+
+      console.log(result)
+
+      //name of the objects are not getting displayed in the console
+
+      //playground.innerHTML = '<h1>${result[0].name}Leonardo</h1>'
+      let names = result.map(actor => actor.name).join(', ')
+
+
+      playground.innerHTML = '<h1>${JSON.stringify(result)}Leonardo</h1>'
+
+
+      //REDUCE******* reduce()
+
+      //sum all of the net worths
+      //SUM: Think reduce
+      // reduce takes in  a function as an argument  
+      //reduce loops and gives you back the accumulator
+
+      // const numms = [1, 2, 3]
+      // numms.reduce(function(prev, nex) {
+      //   console.log(nex)
+      // })
+
+      const numms = [1, 2, 3]
+      const output = numms.reduce(function(prev, nex) {
+        return prev + curr
+      })
+      console.log(output)
+
+
+
+
+
+
+
+
 
 
 
